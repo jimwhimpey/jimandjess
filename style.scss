@@ -4,7 +4,7 @@
 }
 
 body {
-	background: #C5C780 url(texture-light.png);
+	background: #ABDDE0 url(texture-light.png);
 	background-size: 500px 500px;
 	color: #FFF;
 	margin: 0;
@@ -14,6 +14,33 @@ body {
 
 h1, h2, p {
 	padding: 0 0 0 5%;
+}
+
+.sun {
+	height: 500px;
+	
+	background: #f8d3bb;
+	background: -moz-linear-gradient(45deg, #f8d3bb 0%, #e88791 74%, #8b5578 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#f8d3bb), color-stop(74%,#e88791), color-stop(100%,#8b5578));
+	background: -webkit-linear-gradient(45deg, #f8d3bb 0%,#e88791 74%,#8b5578 100%);
+	background: -o-linear-gradient(45deg, #f8d3bb 0%,#e88791 74%,#8b5578 100%);
+	background: -ms-linear-gradient(45deg, #f8d3bb 0%,#e88791 74%,#8b5578 100%);
+	background: linear-gradient(45deg, #f8d3bb 0%,#e88791 74%,#8b5578 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8d3bb', endColorstr='#8b5578',GradientType=1 );
+	
+	position: relative;
+	
+	span {
+		display: block;
+		width: 500px;
+		height: 500px;
+		border: 1px solid transparent;
+		border-radius: 500px;
+		background: rgba(0,0,0,0.1);
+		position: absolute;
+		left: -80px;
+		bottom: -80px;
+	}
 }
 
 h1 {
@@ -26,6 +53,12 @@ h1 {
 	letter-spacing: 0.1em;
 	position: relative;
 	text-shadow: 2px 2px 2px #000;
+	
+	span {
+		display: block;
+		font-size: 50%;
+		opacity: 0.6;
+	}
 	
 //	&::after {
 //		content: "";
