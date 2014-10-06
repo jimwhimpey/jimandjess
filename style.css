@@ -30,16 +30,17 @@ a {
     color: #FFF;
     border-bottom: 1px solid #FFF; }
 
-h1, h2, p {
+h1, h2, p, table {
   padding: 0 0 0 5%;
   line-height: 1.5; }
 
 h1 {
   background-size: 500px 500px;
   margin: 0 0 70px 0;
-  padding: 140px 0 40px 5%;
+  padding: 140px 0 60px 5%;
   font-family: house;
   position: relative;
+  line-height: 1.2;
   background: #f8d3bb;
   background: -moz-linear-gradient(45deg, #f8d3bb 0%, #e88791 74%, #8b5578 100%);
   background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #f8d3bb), color-stop(74%, #e88791), color-stop(100%, #8b5578));
@@ -82,3 +83,16 @@ p {
   margin: 0;
   color: rgba(255, 255, 255, 0.7);
   font-size: 20px; }
+  p .secondary {
+    color: rgba(255, 255, 255, 0.4); }
+
+table {
+  font-family: chaparral;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px; }
+  table td:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+    padding-right: 10px; }
+  table td:last-child {
+    padding-left: 10px; }
