@@ -3,21 +3,51 @@
     src: url(brandon-bold.otf);
 }
 
+@font-face {
+    font-family: house;
+    src: url(house.ttf);
+}
+
+@font-face {
+    font-family: canter3d;
+    src: url(canter3d.otf);
+}
+
+@font-face {
+    font-family: chaparral;
+    src: url(ChaparralPro-Regular.otf);
+}
+
 body {
-	background: #ABDDE0 url(texture-light.png);
+	background: #33414F url(texture.png);
 	background-size: 500px 500px;
 	color: #FFF;
 	margin: 0;
-	padding: 0;
+	padding: 0 0 100px 0;
 	font-family: brandonBold;
+}
+
+a {
+	color: rgba(255,255,255,0.8);
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	&:hover {
+		color: #FFF;
+		border-bottom: 1px solid #FFF;
+	}
 }
 
 h1, h2, p {
 	padding: 0 0 0 5%;
+	line-height: 1.5;
 }
 
-.sun {
-	height: 500px;
+h1 {
+	background-size: 500px 500px;
+	margin: 0 0 70px 0;
+	padding: 140px 0 40px 5%;
+	font-family: house;
+	position: relative;
 	
 	background: #f8d3bb;
 	background: -moz-linear-gradient(45deg, #f8d3bb 0%, #e88791 74%, #8b5578 100%);
@@ -28,47 +58,47 @@ h1, h2, p {
 	background: linear-gradient(45deg, #f8d3bb 0%,#e88791 74%,#8b5578 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8d3bb', endColorstr='#8b5578',GradientType=1 );
 	
-	position: relative;
-	
-	span {
+	span.title {
 		display: block;
-		width: 500px;
-		height: 500px;
-		border: 1px solid transparent;
-		border-radius: 500px;
-		background: rgba(0,0,0,0.1);
-		position: absolute;
-		left: -80px;
-		bottom: -80px;
+		position: relative;
+		z-index: 10;
+		font-size: 60px;
+		span {
+			display: block;
+			font-size: 30%;
+			opacity: 0.6;
+			font-family: brandonBold;
+			text-transform: uppercase;
+			letter-spacing: 0.3em;
+		}
 	}
+
+	object {
+		position: absolute;
+		bottom: 0;
+		&.palm1 {
+			width: 140px;
+			left: 600px;
+		}
+		&.palm2 {
+			width: 100px;
+			left: 680px;
+		}
+	}
+
 }
 
-h1 {
-	
+h2 {
+	font-size: 20px;
+	font-family: brandonBold;
 	text-transform: uppercase;
-	background: #33414F url(texture.png);
-	background-size: 500px 500px;
-	margin: 0 0 40px 0;
-	padding: 70px 0 70px 5%;
-	letter-spacing: 0.1em;
-	position: relative;
-	text-shadow: 2px 2px 2px #000;
-	
-	span {
-		display: block;
-		font-size: 50%;
-		opacity: 0.6;
-	}
-	
-//	&::after {
-//		content: "";
-//		position: absolute;
-//		display: inline-block;
-//		bottom: -8px;
-//		left: 0;
-//		border-bottom: 5px solid #33414F;
-//		width: 100%;
-//		height: 1px;
-//	}
-	
+	letter-spacing: 0.3em;
+	margin: 30px 0 0 0;
+}
+
+p {
+	font-family: chaparral;
+	margin: 0;
+	color: rgba(255,255,255,0.7);
+	font-size: 20px;
 }
