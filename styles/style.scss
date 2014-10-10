@@ -1,20 +1,20 @@
 @font-face {
     font-family: brandonBold;
-    src: url(brandon-bold.otf);
+    src: url(../fonts/brandon-bold.otf);
 }
 
 @font-face {
     font-family: house;
-    src: url(house.ttf);
+    src: url(../fonts/house.ttf);
 }
 
 @font-face {
     font-family: chaparral;
-    src: url(ChaparralPro-Regular.otf);
+    src: url(../fonts/chaparral.otf);
 }
 
 body {
-	background: #33414F url(texture.png);
+	background: #33414F url(images/texture.png);
 	background-size: 500px 500px;
 	color: #FFF;
 	margin: 0;

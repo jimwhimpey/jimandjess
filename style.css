@@ -1,98 +1,22 @@
-@font-face {
-  font-family: brandonBold;
-  src: url(brandon-bold.otf); }
+/*
+Errno::ENOENT: No such file or directory - style.scss
 
-@font-face {
-  font-family: house;
-  src: url(house.ttf); }
-
-@font-face {
-  font-family: chaparral;
-  src: url(ChaparralPro-Regular.otf); }
-
-body {
-  background: #33414f url(texture.png);
-  background-size: 500px 500px;
-  color: #FFF;
-  margin: 0;
-  padding: 0 0 100px 0;
-  font-family: brandonBold; }
-
-a {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-  a:hover {
-    color: #FFF;
-    border-bottom: 1px solid #FFF; }
-
-h1, h2, p, table, ul {
-  padding: 0 0 0 5%;
-  line-height: 1.5; }
-
-h1 {
-  background-size: 500px 500px;
-  margin: 0 0 70px 0;
-  padding: 140px 0 60px 5%;
-  font-family: house;
-  position: relative;
-  line-height: 1.2;
-  background: #f8d3bb;
-  background: -moz-linear-gradient(45deg, #f8d3bb 0%, #e88791 74%, #8b5578 100%);
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #f8d3bb), color-stop(74%, #e88791), color-stop(100%, #8b5578));
-  background: -webkit-linear-gradient(45deg, #f8d3bb 0%, #e88791 74%, #8b5578 100%);
-  background: -o-linear-gradient(45deg, #f8d3bb 0%, #e88791 74%, #8b5578 100%);
-  background: -ms-linear-gradient(45deg, #f8d3bb 0%, #e88791 74%, #8b5578 100%);
-  background: linear-gradient(45deg, #f8d3bb 0%, #e88791 74%, #8b5578 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8d3bb', endColorstr='#8b5578',GradientType=1 ); }
-  h1 span.title {
-    display: block;
-    position: relative;
-    z-index: 10;
-    font-size: 60px; }
-    h1 span.title span {
-      display: block;
-      font-size: 30%;
-      opacity: 0.6;
-      font-family: brandonBold;
-      text-transform: uppercase;
-      letter-spacing: 0.3em; }
-  h1 object {
-    position: absolute;
-    bottom: 0; }
-    h1 object.palm1 {
-      width: 140px;
-      left: 600px; }
-    h1 object.palm2 {
-      width: 100px;
-      left: 680px; }
-
-h2 {
-  font-size: 20px;
-  font-family: brandonBold;
-  text-transform: uppercase;
-  letter-spacing: 0.3em;
-  margin: 30px 0 0 0; }
-
-p, ul {
-  font-family: chaparral;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 20px; }
-  p .secondary, ul .secondary {
-    color: rgba(255, 255, 255, 0.4); }
-
-table {
-  font-family: chaparral;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 20px; }
-  table td:first-child {
-    border-right: 1px solid rgba(255, 255, 255, 0.4);
-    color: rgba(255, 255, 255, 0.4);
-    padding-right: 10px; }
-  table td:last-child {
-    padding-left: 10px; }
-
-ul {
-  margin: 0 0 0 20px;
-  color: rgba(255, 255, 255, 0.6); }
+Backtrace:
+/Users/Jim/.rvm/gems/ruby-1.9.3-head/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:360:in `read'
+/Users/Jim/.rvm/gems/ruby-1.9.3-head/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:360:in `update_stylesheet'
+/Users/Jim/.rvm/gems/ruby-1.9.3-head/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/Jim/.rvm/gems/ruby-1.9.3-head/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/Jim/.rvm/gems/ruby-1.9.3-head/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/Jim/.rvm/gems/ruby-1.9.3-head/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/Jim/.rvm/gems/ruby-1.9.3-head/gems/listen-0.7.2/lib/listen/multi_listener.rb:108:in `call'
+/Users/Jim/.rvm/gems/ruby-1.9.3-head/gems/listen-0.7.2/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/Jim/.rvm/gems/ruby-1.9.3-head/gems/listen-0.7.2/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/Jim/.rvm/gems/ruby-1.9.3-head/gems/listen-0.7.2/lib/listen/adapter.rb:198:in `call'
+/Users/Jim/.rvm/gems/ruby-1.9.3-head/gems/listen-0.7.2/lib/listen/adapter.rb:198:in `report_changes'
+/Users/Jim/.rvm/gems/ruby-1.9.3-head/gems/listen-0.7.2/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/Jim/.rvm/gems/ruby-1.9.3-head/gems/listen-0.7.2/lib/listen/adapters/darwin.rb:38:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory - style.scss"; }
