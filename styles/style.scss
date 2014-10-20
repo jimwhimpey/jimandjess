@@ -72,15 +72,13 @@ h1 {
 	object {
 		position: absolute;
 		bottom: 0;
-		left: 60%;
+		left: 50%;
 		&.palm1 {
 			width: 140px;
-			left: 600px;
 		}
 		&.palm2 {
 			width: 100px;
-			left: 680px;
-			margin-left: 50px;
+			margin-left: 70px;
 		}
 	}
 
