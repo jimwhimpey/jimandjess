@@ -59,13 +59,15 @@ h1 {
       letter-spacing: 0.3em; }
   h1 object {
     position: absolute;
-    bottom: 0; }
+    bottom: 0;
+    left: 60%; }
     h1 object.palm1 {
       width: 140px;
       left: 600px; }
     h1 object.palm2 {
       width: 100px;
-      left: 680px; }
+      left: 680px;
+      margin-left: 50px; }
 
 h2 {
   font-size: 20px;
