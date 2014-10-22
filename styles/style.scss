@@ -13,6 +13,11 @@
     src: url(../fonts/chaparral.otf);
 }
 
+@font-face {
+    font-family: housecasual;
+    src: url(../fonts/housecasual.ttf);
+}
+
 body {
 	background: #33414F url(images/texture.png);
 	background-size: 500px 500px;
@@ -33,7 +38,7 @@ a {
 }
 
 h1, h2, p, table, ul {
-	padding: 0 0 0 5%;
+	padding: 0 5%;
 	line-height: 1.5;
 }
 
@@ -41,9 +46,9 @@ h1 {
 	background-size: 500px 500px;
 	margin: 0 0 70px 0;
 	padding: 140px 0 60px 5%;
-	font-family: house;
+	font-family: housecasual;
 	position: relative;
-	line-height: 1.2;
+	line-height: 1;
 	
 	background: #f8d3bb;
 	background: -moz-linear-gradient(45deg, #f8d3bb 0%, #e88791 74%, #8b5578 100%);
@@ -58,14 +63,15 @@ h1 {
 		display: block;
 		position: relative;
 		z-index: 10;
-		font-size: 60px;
+		font-size: 90px;
 		span {
 			display: block;
-			font-size: 30%;
+			font-size: 16px;
 			opacity: 0.6;
 			font-family: brandonBold;
 			text-transform: uppercase;
 			letter-spacing: 0.3em;
+			margin: 0 0 10px 25px;
 		}
 	}
 
@@ -92,18 +98,21 @@ h2 {
 	margin: 30px 0 0 0;
 }
 
-p, ul {
+@mixin bodyfont {
 	font-family: chaparral;
+	font-size: 20px;
+}
+
+p, ul {
+	@include bodyfont;
 	margin: 0;
 	color: rgba(255,255,255,0.7);
-	font-size: 20px;
 	.secondary { color: rgba(255,255,255,0.4); }
 }
 
 table {
-	font-family: chaparral;
+	@include bodyfont;
 	color: rgba(255,255,255,0.7);
-	font-size: 20px;
 	td:first-child {
 		border-right: 1px solid rgba(255,255,255,0.4);
 		color: rgba(255,255,255,0.4);
