@@ -101,3 +101,8 @@ table {
 ul {
   margin: 0 0 0 20px;
   color: rgba(255, 255, 255, 0.6); }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h1 span.title span {
+    margin: 0 0 30px 5px; } }
