@@ -41,6 +41,7 @@ h1 {
   font-family: housecasual;
   position: relative;
   line-height: 1;
+  overflow: hidden;
   background: #f8d3bb;
   background: -moz-linear-gradient(45deg, #f8d3bb 0%, #e88791 74%, #8b5578 100%);
   background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #f8d3bb), color-stop(74%, #e88791), color-stop(100%, #8b5578));
