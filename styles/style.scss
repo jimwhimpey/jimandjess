@@ -162,6 +162,10 @@ ul {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 	
+	h1 { padding-top: 110px; }
+	
 	h1 span.title span { margin: 0 0 30px 5px; }
+	
+	h1 span.title span.invite { margin: 0 0 30px 0; }
 	
 }
