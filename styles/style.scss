@@ -58,7 +58,6 @@ h1 {
 	background: -o-linear-gradient(45deg, #f8d3bb 0%,#e88791 74%,#8b5578 100%);
 	background: -ms-linear-gradient(45deg, #f8d3bb 0%,#e88791 74%,#8b5578 100%);
 	background: linear-gradient(45deg, #f8d3bb 0%,#e88791 74%,#8b5578 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8d3bb', endColorstr='#8b5578',GradientType=1 );
 	
 	span.title {
 		display: block;
@@ -98,18 +97,34 @@ h2 {
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
 	margin: 30px 0 0 0;
+	
+	.new {
+		font-size: 75%;
+		background: rgba(97, 255, 5, 0.73);
+		padding: 2px 0 2px 5px;
+		display: inline-block;
+		position: relative;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		top: -2px;
+	}
+	
 }
 
-h2.promoTitle { display: none; }
+// h2.promoTitle { display: none; }
 
 .promo {
 	
 	padding-bottom: 250px;
 	
+	span.invite { display: none !important; }
+	
 	h2, p, ul, ol, table { display: none; }
 	
 	h1 { 
 		margin-bottom: 50px;
+		padding-bottom: 40px;
 		object {
 			right: 80px;
 			left: auto;
@@ -121,7 +136,7 @@ h2.promoTitle { display: none; }
 	
 	h2.promoTitle {
 		display: block;
-		font-size: 105%;
+		font-size: 125%;
 		span { border-bottom: 1px solid rgba(255,255,255,0.5); }
 	}
 	
