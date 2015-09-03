@@ -1,0 +1,71 @@
+@font-face {
+	font-family: brandonBold;
+	src: url(../fonts/brandon-bold.otf);
+}
+
+@font-face {
+	font-family: house;
+	src: url(../fonts/house.ttf);
+}
+
+@font-face {
+	font-family: chaparral;
+	src: url(../fonts/chaparral.otf);
+}
+
+@font-face {
+	font-family: housecasual;
+	src: url(../fonts/housecasual.ttf);
+}
+
+body { background: #EEE; }
+
+.page {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: housecasual, Helvetica, serif;
+	font-size: 75px;
+	text-shadow: 0 3px #fff;
+}
+
+h2 {
+	margin: 80px 0 5px 0;
+	font-family: brandonBold, Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+h3 {
+	margin: 0 0 10px 0;
+	font-family: brandonBold, Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	a { 
+		text-decoration: none;
+		color: rgba(0, 0, 0, 0.2);
+		&:hover { color: #000; }
+	}
+}
+
+.preamble {
+	font-family: chaparral, Georgia, serif;
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+img { width: 100%; }
+
+
+
+
+
+
+
+
+
+
+
