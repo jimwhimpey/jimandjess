@@ -26,6 +26,13 @@ body { background: #EEE; }
 	margin: 0 auto;
 }
 
+a {
+	color: blue;
+	text-decoration: none;
+	border-bottom: 1px solid blue;
+	&[href^="https://www.google.com"] { border: none; }
+}
+
 h1 {
 	font-family: housecasual, Helvetica, serif;
 	font-size: 75px;
@@ -33,10 +40,23 @@ h1 {
 }
 
 h2 {
-	margin: 80px 0 5px 0;
+	margin: 200px 0 5px 0;
 	font-family: brandonBold, Helvetica, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
+	position: relative;
+	&::before {
+		content: "";
+		width: 550px;
+		height: 30px;
+		background: url(../images/hr.png);
+		position: absolute;
+		margin: 0 0 0 -275px;
+		top: -120px;
+		left: 50%;
+		opacity: 0.2;
+	}
+
 }
 
 h3 {
@@ -44,17 +64,26 @@ h3 {
 	font-family: brandonBold, Helvetica, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
-	a { 
+	a {
 		text-decoration: none;
 		color: rgba(0, 0, 0, 0.2);
+		border: none;
 		&:hover { color: #000; }
 	}
 }
 
-.preamble {
+article {
 	font-family: chaparral, Georgia, serif;
 	font-size: 18px;
 	line-height: 1.6;
+	cite {
+		font-style: normal;
+		font-weight: bold;
+	}
+	.date {
+		font-style: italic;
+		font-weight: bold;
+	}
 }
 
 img { width: 100%; }
