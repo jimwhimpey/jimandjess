@@ -30,7 +30,8 @@ a {
 	color: blue;
 	text-decoration: none;
 	border-bottom: 1px solid blue;
-	&[href^="https://www.google.com"] { border: none; }
+	&[href^="https://www.google.com"],
+	&[href^="https://www.flickr.com"] { border: none; }
 }
 
 h1 {
