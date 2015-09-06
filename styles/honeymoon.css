@@ -26,12 +26,12 @@ a {
   color: blue;
   text-decoration: none;
   border-bottom: 1px solid blue; }
-  a[href^="https://www.google.com"], a[href^="https://www.flickr.com"] {
+  a[href^="https://www.google.com"], a[data-flickr-embed="true"] {
     border: none; }
 
 h1 {
   font-family: housecasual, Helvetica, serif;
-  font-size: 75px;
+  font-size: 76px;
   text-shadow: 0 3px #fff; }
 
 h2 {
@@ -39,7 +39,8 @@ h2 {
   font-family: brandonBold, Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  position: relative; }
+  position: relative;
+  font-weight: normal; }
   h2::before {
     content: "";
     width: 550px;
@@ -70,3 +71,26 @@ article {
 
 img {
   width: 100%; }
+
+/* Little screens! ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h1, h2, h3 {
+    font-weight: normal; }
+
+  h1 {
+    font-size: 100px; }
+
+  h2 {
+    font-size: 32px;
+    margin: 300px 0 5px 0; }
+    h2::before {
+      top: -180px;
+      opacity: 0.4; }
+
+  h3 {
+    font-size: 26px; }
+
+  article {
+    font-size: 24px; }
+    article cite, article .date {
+      font-weight: normal; } }
