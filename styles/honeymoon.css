@@ -53,10 +53,12 @@ h2 {
     opacity: 0.2; }
 
 h3 {
-  margin: 0 0 10px 0;
+  margin: 0 0 25px 0;
   font-family: brandonBold, Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em; }
+  h3 a {
+    border-bottom: none; }
 
 article {
   font-family: chaparral, Georgia, serif;
@@ -91,6 +93,6 @@ img {
     font-size: 26px; }
 
   article {
-    font-size: 24px; }
+    font-size: 26px; }
     article cite, article .date {
       font-weight: normal; } }
